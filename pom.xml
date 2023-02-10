@@ -14,7 +14,7 @@
 	<name>inventory-springboot</name>
 	<description>Project back-end for control of the inventory</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
