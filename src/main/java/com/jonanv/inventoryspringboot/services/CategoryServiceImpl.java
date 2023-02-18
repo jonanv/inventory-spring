@@ -50,7 +50,7 @@ public class CategoryServiceImpl implements ICategoryService {
 			
 			if (category.isPresent()) {
 				response.getCategoryResponse().setCategory(list);
-				response.setMetadata("Respuesta nok", "00", "Categoria encontrada");
+				response.setMetadata("Respuesta ok", "00", "Categoria encontrada");
 			} else {
 				response.setMetadata("Respuesta nok", "-1", "Categoria no encontrada");
 				return new ResponseEntity<CategoryResponseRest>(response, HttpStatus.NOT_FOUND);
