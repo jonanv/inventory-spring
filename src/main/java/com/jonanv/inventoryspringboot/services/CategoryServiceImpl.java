@@ -49,6 +49,7 @@ public class CategoryServiceImpl implements ICategoryService {
 			Optional<Category> category = categoryDao.findById(id);
 			
 			if (category.isPresent()) {
+				list.add(category.get());
 				response.getCategoryResponse().setCategory(list);
 				response.setMetadata("Respuesta ok", "00", "Categoria encontrada");
 			} else {
