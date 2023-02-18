@@ -6,6 +6,4 @@ import com.jonanv.inventoryspringboot.model.Category;
 
 public interface ICategoryDao extends CrudRepository<Category, Long> {
 	
-	
-
 }
