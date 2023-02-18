@@ -4,6 +4,8 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.jonanv.inventoryspringboot.model.Category;
 
-	public interface ICategoryDao extends CrudRepository<Category, Long> {
+public interface ICategoryDao extends CrudRepository<Category, Long> {
+	
+	
 
 }
