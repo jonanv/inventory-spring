@@ -65,17 +65,17 @@ public class CategoryServiceImpl implements ICategoryService {
 	}
 
 	@Override
-	@Transactional(readOnly = true)
+	@Transactional
 	public ResponseEntity<CategoryResponseRest> save(Category category) {
 		
 		CategoryResponseRest response = new CategoryResponseRest();
 		List<Category> list = new ArrayList<>();
 		
 		try {
-			Category categorySave = categoryDao.save(category);
+			Category categorySaved = categoryDao.save(category);
 			
-			if (categorySave != null) {
-				list.add(categorySave);
+			if (categorySaved != null) {
+				list.add(categorySaved);
 				response.getCategoryResponse().setCategory(list);
 				response.setMetadata("Respuesta ok", "00", "Categoria guardada");
 			} else {
