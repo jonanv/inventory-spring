@@ -2,6 +2,7 @@ package com.jonanv.inventoryspringboot.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,7 @@ import com.jonanv.inventoryspringboot.model.Category;
 import com.jonanv.inventoryspringboot.response.CategoryResponseRest;
 import com.jonanv.inventoryspringboot.services.ICategoryService;
 
+@CrossOrigin(origins = { "http://localhost:4201" })
 @RestController
 @RequestMapping("/api/v1")
 public class CategoryRestController {
