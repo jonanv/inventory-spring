@@ -53,7 +53,7 @@ public class CategoryServiceImpl implements ICategoryService {
 				response.setMetadata("Respuesta nok", "00", "Categoria encontrada");
 			} else {
 				response.setMetadata("Respuesta nok", "-1", "Categoria no encontrada");
-				return new ResponseEntity<CategoryResponseRest>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+				return new ResponseEntity<CategoryResponseRest>(response, HttpStatus.NOT_FOUND);
 			}
 			
 		} catch (Exception e) {
